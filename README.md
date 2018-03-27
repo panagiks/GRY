@@ -55,7 +55,7 @@ try:
         conn, addr = s.accept()
         data = recv(conn)
         print json.loads(data)
-except KeyboardInterupt:
+except KeyboardInterrupt:
     s.close()
 ```
 
